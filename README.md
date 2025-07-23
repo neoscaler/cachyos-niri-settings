@@ -1,7 +1,7 @@
-<div align="center"><b>CachyOS Hyprland Settings</b></div>
+<div align="center"><b>CachyOS Niri Settings</b></div>
 
-**Hyprland** is a dynamic tiling Wayland compositor based on wlroots that doesn't sacrifice on its looks. It supports multiple layouts, fancy effects, and has a very flexible IPC model allowing for a lot of customization.
+**Niri** is a scrollable tiling Wayland compositor that emphasizes simplicity and fluid window management. It uses a continuous grid layout, optimized for both keyboard and touchpad navigation.
 
-This repository contains configuration files for various programs and tools used in the CachyOS Hyprland operating system. By using these configs, you can customize your system to better suit your needs and preferences.
+This repository contains configuration files for Niri and related tools in CachyOS. These settings are designed to provide a balanced default setup while allowing easy customization.
 
-Thank you for using CachyOS Hyprland Settings. We hope you enjoy your customized system!
+Thank you for using CachyOS Niri Settings.
