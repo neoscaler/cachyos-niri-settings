@@ -45,7 +45,7 @@ binds {
     MOD+B                               hotkey-overlay-title="Open Browser: firefox" { spawn "firefox"; }
     MOD+ALT+L                           hotkey-overlay-title="Lock Screen: swaylock" { spawn "swaylock"; }
     
-    /// Please choose your own file manager
+    // Please choose your own file manager
     MOD+E                             hotkey-overlay-title="File Manager: " { spawn ""; }
 
     // ─── Audio Controls ───
