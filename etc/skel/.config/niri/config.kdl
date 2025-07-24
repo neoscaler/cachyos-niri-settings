@@ -26,7 +26,7 @@ input {
 // You will have to remove "/-" and edit it before it takes effect.
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
 
-output "DP-1" {
+/- output "DP-1" {
     mode "2560x1440@359.979" // Set resolution and refresh rate
     scale 1 // No scaling (use 2 for HiDPI)
     transform "normal" // No rotation
@@ -44,6 +44,9 @@ binds {
     MOD+SPACE                           hotkey-overlay-title="Open App Launcher: wofi" { spawn "wofi"; }
     MOD+B                               hotkey-overlay-title="Open Browser: firefox" { spawn "firefox"; }
     MOD+ALT+L                           hotkey-overlay-title="Lock Screen: swaylock" { spawn "swaylock"; }
+    
+    /// Please choose your own file manager
+    MOD+E                             hotkey-overlay-title="File Manager: " { spawn ""; }
 
     // ─── Audio Controls ───
     XF86AUDIORAISEVOLUME                allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"; }
