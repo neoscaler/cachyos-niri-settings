@@ -7,7 +7,7 @@
 input {
     keyboard {
         xkb {
-            layout "us" // Use the German keyboard layout
+            layout "de" // Use the German keyboard layout
         }
         numlock // Enable numlock on startup
     }
@@ -26,7 +26,7 @@ input {
 // You will have to remove "/-" and edit it before it takes effect.
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
 
-/-output "DP-1" {
+output "DP-1" {
     mode "2560x1440@359.979" // Set resolution and refresh rate
     scale 1 // No scaling (use 2 for HiDPI)
     transform "normal" // No rotation
@@ -158,14 +158,14 @@ binds {
 // ────────────── Startup Applications ──────────────
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#spawn-at-startup
 
-    spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &" // Polkit
+    spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1" "&" // Polkit
     spawn-at-startup "xwayland-satellite" // XWayland support
     spawn-at-startup "swww-daemon" // Wallpaper daemon
-    spawn-at-startup "swww img /usr/share/wallpapers/cachyos-wallpapers/Skyscraper.png" // Set wallpaper
+    spawn-at-startup "swww img" "/usr/share/wallpapers/cachyos-wallpapers/Skyscraper.png" // Set wallpaper
     spawn-at-startup "waybar" // Launch waybar
 
     prefer-no-csd // Disable program decorations
-    screenshot-path null // Use default screenshot path
+    screenshot-path null // Disable screenshot saving
 
 // ────────────── Layout Settings ──────────────
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
@@ -248,7 +248,7 @@ binds {
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#environment
 
     environment {
-        DISPLAY ":10"
+        DISPLAY ":1"
         ELECTRON_OZONE_PLATFORM_HINT "auto"
         QT_QPA_PLATFORM "wayland"
         QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
