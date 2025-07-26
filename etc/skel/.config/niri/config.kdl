@@ -29,8 +29,6 @@ input {
 /- output "DP-1" {
     mode "2560x1440@359.979" // Set resolution and refresh rate
     scale 1 // No scaling (use 2 for HiDPI)
-    transform "normal" // No rotation
-    position x=2560 y=0 // Position relative to another screen (2560 to the right of primary)
 }
 
 // ────────────── Keybindings ──────────────
