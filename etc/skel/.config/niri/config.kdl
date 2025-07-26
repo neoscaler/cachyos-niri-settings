@@ -256,3 +256,8 @@ binds {
         XDG_SESSION_TYPE "wayland"
         XDG_CURRENT_DESKTOP "niri"
     }
+
+    hotkey-overlay {
+        skip-at-startup
+        hide-not-bound
+    }
