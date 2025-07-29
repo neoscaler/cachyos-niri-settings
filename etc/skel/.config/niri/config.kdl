@@ -7,7 +7,7 @@
 input {
     keyboard {
         xkb {
-            layout "de" // Use the German keyboard layout
+            layout "us" // Use the German keyboard layout
         }
         numlock // Enable numlock on startup
     }
@@ -44,7 +44,7 @@ binds {
     MOD+ALT+L                           hotkey-overlay-title="Lock Screen: swaylock" { spawn "swaylock"; }
     
     // Please choose your own file manager
-    MOD+E                             hotkey-overlay-title="File Manager: " { spawn ""; }
+    MOD+E                             hotkey-overlay-title="File Manager: Nautilus" { spawn "nautilus"; }
 
     // ─── Audio Controls ───
     XF86AUDIORAISEVOLUME                allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"; }
