@@ -47,10 +47,16 @@ binds {
     MOD+E                             hotkey-overlay-title="File Manager: Nautilus" { spawn "nautilus"; }
 
     // ─── Audio Controls ───
-    XF86AUDIORAISEVOLUME                allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"; }
-    XF86AUDIOLOWERVOLUME                allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"; }
-    XF86AUDIOMUTE                       allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
-    XF86AUDIOMICMUTE                    allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
+    // Example volume keys mappings for PipeWire & WirePlumber.
+    // The allow-when-locked=true property makes them work even when the session is locked.
+    XF86AudioRaiseVolume                allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"; }
+    XF86AudioLowerVolume                allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"; }
+    XF86AudioMute                       allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
+    XF86AudioMicMute                    allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
+    XF86AudioNext                       allow-when-locked=true { spawn "playerctl" "next"; }
+    XF86AudioPause                      allow-when-locked=true { spawn "playerctl" "play-pause"; }
+    XF86AudioPlay                       allow-when-locked=true { spawn "playerctl" "play-pause"; }
+    XF86AudioPrev                       allow-when-locked=true { spawn "playerctl" "previous"; }
 
     // ─── Window Movement and Focus ───
     MOD+Q                               { close-window; }
