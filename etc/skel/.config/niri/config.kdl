@@ -265,5 +265,4 @@ binds {
 
     hotkey-overlay {
         skip-at-startup
-        hide-not-bound
     }
